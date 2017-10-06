@@ -1,6 +1,7 @@
 FROM golang
 
-WORKDIR /go/src/app
-COPY . .
+WORKDIR /app
 
-RUN go-wrapper download -t
+RUN go-wrapper download \
+    github.com/stretchr/testify/assert \
+    github.com/mikkyang/id3-go

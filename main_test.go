@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-const mp3File = "test_data/Pat Benatar - Fire and Ice.mp3"
+const mp3File = "testdata/Pat Benatar - Fire and Ice.mp3"
 
 func TestGetGenreIntegration(t *testing.T) {
 	genre := GetGenre(mp3File)
